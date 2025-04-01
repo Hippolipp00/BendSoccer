@@ -60,3 +60,13 @@ body {
   text-align: center;
   color:#03396c;
 }
+
+.img2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  max-width: 50%;
+  max-height: 50%;
+}
+    
