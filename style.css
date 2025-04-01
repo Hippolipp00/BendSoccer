@@ -7,8 +7,8 @@
 color:#EBEBDF
 }
 body {
-	margin-left: 0px;
-	margin-top: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
   background-color:#EBEBDF;
   font-family:Arial, Helvetica, sans-serif;
 }
@@ -39,7 +39,7 @@ body {
 
 .teams {
   color:#191265;
-	text-align: center;
+  text-align: center;
 }
 .coaches {
   color:#03396c;
@@ -61,12 +61,4 @@ body {
   color:#03396c;
 }
 
-.img2 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  max-width: 50%;
-  max-height: 50%;
-}
     
