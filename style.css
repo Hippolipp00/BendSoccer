@@ -61,4 +61,12 @@ body {
   color:#03396c;
 }
 
+.month {
+  display: flex;
+  text-decoration: underline;
+  justify-content: space-around;
+}
+
+
+
     
