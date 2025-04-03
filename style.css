@@ -65,7 +65,10 @@ body {
   text-decoration: underline;
   justify-content: space-around;
 }
-
+.logo {
+display: flex;
+justify-content:flex-start;
+}
 
 
     
