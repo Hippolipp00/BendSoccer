@@ -3,12 +3,12 @@
 }
 .htmls a{
 color:#EBEBDF;
-padding: 10px;
+padding: 5%;
 }
 body {
-  margin-left: 0px;
-  margin-top: 0px;
-  margin-right: 0px;
+  margin-left: 0%;
+  margin-top: 0%;
+  margin-right: 0%;
   background-color:#EBEBDF;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -24,10 +24,10 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
+  margin-top: 5%;
   width: 50%;
   height: 50%;
-  border-radius: 15px;
+  border-radius: 5%;
 }
 .goal {
   text-align: center;
