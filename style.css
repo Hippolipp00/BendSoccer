@@ -6,11 +6,9 @@ color:#EBEBDF;
 padding: 5%;
 }
 body {
-  margin-left: 0%;
-  margin-top: 0%;
-  margin-right: 0%;
-  background-color:#EBEBDF;
-  font-family: Arial, Helvetica, sans-serif;
+margin: 0%;
+background-color:#EBEBDF;
+font-family: Arial, Helvetica, sans-serif;
 }
 .top {
   color:#EBEBDF;
