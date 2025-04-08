@@ -6,6 +6,11 @@ color:#EBEBDF;
 padding-left: 5%;
 padding-right: 5%;
 }
+@media only screen and (max-width: 600px) {
+  .htmls {
+    text-align: center;
+  }
+}
 body {
 margin: 0%;
 background-color:#EBEBDF;
