@@ -1,6 +1,5 @@
 .htmls {
   display: inline;
-  justify-content: space-around;
 }
 .htmls a{
 color:#EBEBDF;
@@ -9,8 +8,9 @@ padding: 10px;
 body {
   margin-left: 0px;
   margin-top: 0px;
+  margin-right: 0px;
   background-color:#EBEBDF;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .top {
   color:#EBEBDF;
@@ -25,8 +25,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  max-width: 50%;
-  max-height: 50%;
+  width: 50%;
+  height: 50%;
   border-radius: 15px;
 }
 .goal {
