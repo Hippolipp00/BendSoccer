@@ -1,9 +1,10 @@
 .htmls {
-  display: flex;
+  display: inline;
   justify-content: space-around;
 }
 .htmls a{
-color:#EBEBDF
+color:#EBEBDF;
+padding: 10px;
 }
 body {
   margin-left: 0px;
@@ -41,29 +42,29 @@ body {
   text-align: center;
 }
 .coaches {
-  color:#03396c;
-  text-align: center;
+color:#03396c;
+text-align: center;
 }
 .Oinfo {
-  text-align: center;
+text-align: center;
 }
 .Oinfo a{
-  color:#03396c;
+color:#03396c;
 }
 .inProgress{
-  text-align: center;
-  color:#ccac00;
+text-align: center;
+color:#ccac00;
 }
 }
 .summerpractice {
-  text-align: center;
-  color:#03396c;
+text-align: center;
+color:#03396c;
 }
 
 .month {
-  display: flex;
-  text-decoration: underline;
-  justify-content: space-around;
+display: flex;
+text-decoration: underline;
+justify-content: space-around;
 }
 .logo {
 display: flex;
