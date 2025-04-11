@@ -15,7 +15,6 @@ font-family: Arial, Helvetica, sans-serif;
   color:#EBEBDF;
   background-color:#191265;
   text-align: center;
-  align-content: flex-start;
   font-size:large; 
 }
 .img1 {
@@ -46,28 +45,41 @@ text-align: center;
 text-align: center;
 }
 .Oinfo a{
-color:#03396c;
+  color:#03396c;
 }
 .inProgress{
-text-align: center;
-color:#ccac00;
+  text-align: center;
+  color:#ccac00;
 }
 .summerpractice {
-text-align: center;
-color:#03396c;
+  text-align: center;
+  color:#03396c;
 }
 .month {
-display: flex;
-justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 .logo {
-display: flex;
-justify-content:flex-start;
+  display: flex;
+  justify-content:flex-start;
 }
 .logo {
-  position: absolute;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    height: 90px;
+    width: 90px;
+}
+@media (max-width:1179){
+.htmls {
+    display:flex;
+    justify-content: center;
+  }
+  .logo {
+    position: absolute;
   top: 1px;
   left: 1px;
-  height: 90px;
-  width: 90px;
+  height: 65px;
+  width: 65px;
+  }
 }
