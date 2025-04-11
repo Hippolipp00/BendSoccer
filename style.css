@@ -70,7 +70,7 @@ text-align: center;
     height: 90px;
     width: 90px;
 }
-@media (max-width:1180){
+@media (max-width: 768px){
 .htmls {
     display:flex;
     justify-content: center;
