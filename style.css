@@ -77,8 +77,8 @@ text-align: center;
   }
   .logo {
     position: absolute;
-  top: 1px;
-  left: 1px;
+  top: 15px;
+  left: 15px;
   height: 65px;
   width: 65px;
   }
