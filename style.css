@@ -1,22 +1,34 @@
+/* General Styles */
+body {
+  margin: 0;
+  background-color: #EBEBDF;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 90px; /* Add space for the fixed header */
+}
+
+.top {
+  color: #EBEBDF;
+  background-color: #191265;
+  text-align: center;
+  font-size: large;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 0; /* Adjust padding for better spacing */
+  z-index: 10; /* Ensure it stays on top of other content */
+}
+
 .htmls {
   display: inline;
 }
-.htmls a{
-color:#EBEBDF;
-padding-left: 5%;
-padding-right: 5%;
+
+.htmls a {
+  color: #EBEBDF;
+  padding-left: 5%;
+  padding-right: 5%;
 }
-body {
-margin: 0%;
-background-color:#EBEBDF;
-font-family: Arial, Helvetica, sans-serif;
-}
-.top {
-  color:#EBEBDF;
-  background-color:#191265;
-  text-align: center;
-  font-size:large; 
-}
+
 .img1 {
   display: block;
   margin-left: auto;
@@ -26,60 +38,86 @@ font-family: Arial, Helvetica, sans-serif;
   height: 50%;
   border-radius: 5%;
 }
+
 .goal {
   text-align: center;
-  font-family:Arial, Helvetica, sans-serif;
-  font-size:large;
-  color:#EBEBDF;
-  background-color:#191265;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  color: #EBEBDF;
+  background-color: #191265;
 }
+
 .teams {
-  color:#191265;
+  color: #191265;
   text-align: center;
 }
+
 .coaches {
-color:#03396c;
-text-align: center;
-}
-.Oinfo {
-text-align: center;
-}
-.Oinfo a{
-  color:#03396c;
-}
-.inProgress{
+  color: #03396c;
   text-align: center;
-  color:#ccac00;
 }
+
+.Oinfo {
+  text-align: center;
+}
+
+.Oinfo a {
+  color: #03396c;
+}
+
+.inProgress {
+  text-align: center;
+  color: #ccac00;
+}
+
 .summerpractice {
   text-align: center;
-  color:#03396c;
+  color: #03396c;
 }
+
 .month {
   display: flex;
   justify-content: space-around;
 }
+
 .logo {
   display: flex;
-  justify-content:flex-start;
-}
-.logo {
-    position: absolute;
-    top: 1px;
-    left: 1px;
-    height: 90px;
-    width: 90px;
-}
-@media (max-width: 768px){
-.htmls {
-    display:flex;
-    justify-content: center;
-  }
-  .logo {
-    position: absolute;
+  justify-content: flex-start;
+  position: absolute;
   top: 15px;
   left: 15px;
-  height: 65px;
-  width: 65px;
+  height: 90px;
+  width: 90px;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  /* Adjustments for mobile view */
+  .htmls {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .htmls a {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .logo {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    height: 65px;
+    width: 65px;
+  }
+
+  .top {
+    font-size: medium;
+    padding: 10px 0;
+  }
+
+  body {
+    padding-top: 75px; /* Adjust padding for smaller header */
   }
 }
