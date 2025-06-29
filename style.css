@@ -3,7 +3,7 @@ body {
   margin: 0;
   background-color: #EBEBDF;
   font-family: Arial, Helvetica, sans-serif;
-  padding-top: 90px; /* Add space for the fixed header */
+  padding-top: 100px; /* Extra space for smaller header adjustments */
   box-sizing: border-box;
 }
 
@@ -15,11 +15,13 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   font-size: large;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 15px 0; /* Adjust padding for better spacing */
-  z-index: 10; /* Ensure it stays on top of other content */
+  padding: 20px 0;
+  z-index: 10;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -101,7 +103,7 @@ body {
 @media (max-width: 768px) {
   .top {
     font-size: medium;
-    padding: 10px 0;
+    padding: 12px 0;
   }
 
   .htmls {
@@ -111,12 +113,12 @@ body {
   .logo {
     height: 50px;
     width: 50px;
-    top: 10px;
-    left: 10px;
+    top: 8px;
+    left: 8px;
   }
 
   body {
-    padding-top: 75px;
+    padding-top: 85px; /* Adjust padding for smaller header */
   }
 
   .img1 {
@@ -125,12 +127,21 @@ body {
 }
 
 @media (max-width: 480px) {
+  .top {
+    font-size: small;
+    padding: 10px 0;
+  }
+
   .htmls {
     flex-direction: column;
     align-items: center;
   }
 
   .htmls a {
-    padding: 8px 0;
+    padding: 6px 0;
+  }
+
+  body {
+    padding-top: 70px; /* Smaller padding for short header */
   }
 }
