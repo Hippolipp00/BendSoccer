@@ -3,153 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bend High Boys Soccer</title>
-  <style>
-    /* ========== Base Styles ========== */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #EBEBDF;
-      padding-top: 90px;
-    }
-
-    html {
-      scroll-padding-top: 90px;
-    }
-
-    .top {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: #191265;
-      color: #EBEBDF;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      padding: 20px 10px;
-      z-index: 1000;
-    }
-
-    .logo {
-      height: 70px;
-      width: 70px;
-      flex-shrink: 0;
-    }
-
-    .htmls {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      flex: 1;
-      gap: 15px;
-    }
-
-    .htmls a {
-      color: #EBEBDF;
-      text-decoration: none;
-      padding: 8px 12px;
-      font-size: 1rem;
-    }
-
-    main {
-      padding: 20px;
-    }
-
-    .section {
-      margin: 30px auto;
-      max-width: 800px;
-      text-align: center;
-      color: #191265;
-    }
-
-    /* ========== Responsive Design ========== */
-    @media (max-width: 768px) {
-      html { scroll-padding-top: 75px; }
-      .top {
-        padding: 15px 8px;
-      }
-      .logo {
-        height: 50px;
-        width: 50px;
-      }
-      .htmls a {
-        font-size: 0.9rem;
-        padding: 6px 10px;
-      }
-      body {
-        padding-top: 75px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      html { scroll-padding-top: 60px; }
-      .top {
-        flex-direction: column;
-        align-items: center;
-        padding: 12px 5px;
-      }
-      .logo {
-        height: 45px;
-        width: 45px;
-        margin-bottom: 8px;
-      }
-      .htmls {
-        justify-content: center;
-        gap: 10px;
-      }
-      .htmls a {
-        font-size: 0.85rem;
-        padding: 5px 8px;
-      }
-      body {
-        padding-top: 60px;
-      }
-    }
-  </style>
+  <title>Home - Bend High Boys Soccer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="top">
-    <img src="logo.png" alt="Bend High Logo" class="logo" />
-    <nav class="htmls">
-      <a href="#home">Home</a>
-      <a href="#schedule">Schedule</a>
-      <a href="#teams">Teams</a>
-      <a href="#coaches">Coaches</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <nav class="top">
+    <header>
+      <h1>Bend High Boys Soccer</h1>
+      <img class="logo" src="silly.png" alt="Bend High Logo">
+    </header>
+    <div class="htmls">
+      <a href="index.html">Home</a>
+      <a href="index-6.html">Summer Practices</a>
+      <a href="index-2.html">Teams</a>
+      <a href="index-3.html">Coaches</a>
+      <a href="index-4.html">Schedules</a>
+      <a href="index-5.html">Other Info</a>
+    </div>
+  </nav>
 
   <main>
-    <section class="section" id="home">
+    <section class="section">
       <h2>Welcome to Bend High Boys Soccer</h2>
-      <p>This is the official site for Bend High School's boys soccer program.</p>
-    </section>
-
-    <section class="section" id="schedule">
-      <h2>Season Schedule</h2>
-      <p>Check back here for updated game dates and locations.</p>
-    </section>
-
-    <section class="section" id="teams">
-      <h2>Our Teams</h2>
-      <p>Meet our Varsity, JV, and JV2 teams for the current season.</p>
-    </section>
-
-    <section class="section" id="coaches">
-      <h2>Coaching Staff</h2>
-      <p>Learn more about our dedicated coaching staff and their experience.</p>
-    </section>
-
-    <section class="section" id="contact">
-      <h2>Contact Us</h2>
-      <p>For more information, reach out via email or through the school office.</p>
+      <p>Stay up to date with team news, schedules, and events for the Lava Bears soccer program.</p>
+      <img class="img1" src="teamphoto.jpg" alt="Team Photo">
     </section>
   </main>
 </body>
