@@ -4,12 +4,16 @@ body {
   background-color: #EBEBDF;
   font-family: Arial, Helvetica, sans-serif;
   padding-top: 90px; /* Add space for the fixed header */
+  box-sizing: border-box;
 }
 
 .top {
   color: #EBEBDF;
   background-color: #191265;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   font-size: large;
   position: fixed;
   top: 0;
@@ -19,23 +23,36 @@ body {
   z-index: 10; /* Ensure it stays on top of other content */
 }
 
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 70px;
+  width: 70px;
+  z-index: 11;
+}
+
 .htmls {
-  display: inline;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .htmls a {
   color: #EBEBDF;
-  padding-left: 5%;
-  padding-right: 5%;
+  text-decoration: none;
+  padding: 5px 10px;
 }
 
 .img1 {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5%;
+  margin: 5% auto 0 auto;
   width: 50%;
-  height: 50%;
+  height: auto;
   border-radius: 5%;
 }
 
@@ -78,46 +95,43 @@ body {
 .month {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.logo {
-  display: flex;
-  justify-content: flex-start;
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  height: 90px;
-  width: 90px;
-  z-index: 10;
-}
-
+/* Responsive Design */
 @media (max-width: 768px) {
-  /* Adjustments for mobile view */
-  .htmls {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .htmls a {
-    padding-left: 2%;
-    padding-right: 2%;
-  }
-
-  .logo {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    height: 65px;
-    width: 65px;
-  }
-
   .top {
     font-size: medium;
     padding: 10px 0;
   }
 
+  .htmls {
+    gap: 10px;
+  }
+
+  .logo {
+    height: 50px;
+    width: 50px;
+    top: 10px;
+    left: 10px;
+  }
+
   body {
-    padding-top: 75px; /* Adjust padding for smaller header */
+    padding-top: 75px;
+  }
+
+  .img1 {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .htmls {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .htmls a {
+    padding: 8px 0;
   }
 }
