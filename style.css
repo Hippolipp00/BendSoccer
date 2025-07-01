@@ -1,4 +1,4 @@
-/* ========== Base Styles ========== */
+/* ========== Reset and Base Styles ========== */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,9 +8,16 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #EBEBDF;
-  /* No padding-top needed now */
+  line-height: 1.6;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ========== Top Navigation ========== */
 .top {
   position: fixed;
   top: 0;
@@ -19,7 +26,7 @@ body {
   background-color: #191265;
   color: #EBEBDF;
   z-index: 1000;
-  padding: 10px 15px;
+  padding: 20px 15px;
 }
 
 .nav-container {
@@ -31,6 +38,7 @@ body {
   margin: 0 auto;
 }
 
+/* Logo and Title */
 .logo-title {
   display: flex;
   align-items: center;
@@ -43,10 +51,7 @@ body {
   width: 70px;
 }
 
-.logo-title h1 {
-  font-size: 1.5rem;
-}
-
+/* Nav Links */
 .htmls {
   display: flex;
   flex-wrap: wrap;
@@ -60,32 +65,38 @@ body {
   text-decoration: none;
   padding: 8px 12px;
   font-size: 1rem;
+  transition: background 0.3s, color 0.3s;
 }
 
-/* Spacer to offset fixed nav height */
-.nav-spacer {
-  height: 100px;
+.htmls a:hover {
+  background-color: #ffffff20;
+  border-radius: 5px;
 }
 
+/* ========== Main Content ========== */
 main {
+  margin-top: 130px; /* Matches .top height to prevent overlap */
   padding: 20px;
 }
 
 .section {
-  margin: 30px auto;
   max-width: 800px;
+  margin: 30px auto;
   text-align: center;
   color: #191265;
 }
 
 .img1 {
-  width: 100%;
-  height: auto;
   margin-top: 20px;
+  border-radius: 8px;
 }
 
 /* ========== Responsive Design ========== */
 @media (max-width: 768px) {
+  .top {
+    padding: 16px 12px;
+  }
+
   .logo {
     height: 50px;
     width: 50px;
@@ -100,8 +111,8 @@ main {
     padding: 6px 10px;
   }
 
-  .nav-spacer {
-    height: 90px;
+  main {
+    margin-top: 115px;
   }
 }
 
@@ -120,6 +131,7 @@ main {
   .logo-title {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
   .htmls {
@@ -132,7 +144,11 @@ main {
     padding: 5px 8px;
   }
 
-  .nav-spacer {
-    height: 80px;
+  .top {
+    padding: 12px 10px;
+  }
+
+  main {
+    margin-top: 105px;
   }
 }
