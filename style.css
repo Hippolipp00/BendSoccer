@@ -11,10 +11,6 @@ body {
   padding-top: 120px; /* Enough space for fixed nav */
 }
 
-html {
-  scroll-padding-top: 100px;
-}
-
 .top {
   position: fixed;
   top: 0;
@@ -54,9 +50,7 @@ html {
 .htmls {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
   justify-content: center;
-  margin-top: 10px;
 }
 
 .htmls a {
