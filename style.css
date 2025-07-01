@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+.nav-spacer {
+  height: 80px;
+ }
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #EBEBDF;
