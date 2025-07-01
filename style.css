@@ -8,6 +8,7 @@
 .nav-spacer {
   height: 80px;
  }
+
 .oinfo {
   color: #191265;
   text-align: center;
@@ -71,10 +72,8 @@ img {
 
 .htmls a {
   color: #EBEBDF;
-  text-decoration: none;
   padding: 8px 12px;
   font-size: 1rem;
-  transition: background 0.3s, color 0.3s;
 }
 
 .htmls a:hover {
