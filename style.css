@@ -93,6 +93,7 @@ main {
 .img1 {
   margin-top: 20px;
   border-radius: 8px;
+  align-items: center;
 }
 
 /* ========== Responsive Design ========== */
