@@ -8,6 +8,11 @@
 .nav-spacer {
   height: 80px;
  }
+.oinfo {
+  color: #191265;
+  text-align: center;
+}
+
 
 body {
   font-family: Arial, Helvetica, sans-serif;
