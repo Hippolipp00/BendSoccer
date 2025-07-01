@@ -93,8 +93,8 @@ main {
 .img1 {
   margin-top: 20px;
   border-radius: 8px;
-  height: auto;
   display: block;
+  margin: auto;
 }
 
 /* ========== Responsive Design ========== */
