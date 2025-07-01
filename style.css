@@ -8,11 +8,11 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #EBEBDF;
-  padding-top: 90px;
+  padding-top: 100px; /* Enough space for fixed nav */
 }
 
 html {
-  scroll-padding-top: 90px;
+  scroll-padding-top: 100px;
 }
 
 .top {
@@ -22,24 +22,41 @@ html {
   width: 100%;
   background-color: #191265;
   color: #EBEBDF;
+  z-index: 1000;
+  padding: 10px 15px;
+}
+
+.nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo-title {
   display: flex;
   align-items: center;
-  justify-content: space-between;;
-  padding: 20px 10px;
-  z-index: 1000;
+  gap: 10px;
+  flex-shrink: 0;
 }
 
 .logo {
   height: 70px;
   width: 70px;
-  flex-shrink: 0;
+}
+
+.logo-title h1 {
+  font-size: 1.5rem;
 }
 
 .htmls {
   display: flex;
-  justify-content: center;
-  flex: 1;
+  flex-wrap: wrap;
   gap: 15px;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .htmls a {
@@ -60,46 +77,68 @@ main {
   color: #191265;
 }
 
+.img1 {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
 /* ========== Responsive Design ========== */
 @media (max-width: 768px) {
-  html { scroll-padding-top: 75px; }
-  .top {
-    padding: 15px 8px;
+  body {
+    padding-top: 90px;
   }
+
+  html {
+    scroll-padding-top: 90px;
+  }
+
   .logo {
     height: 50px;
     width: 50px;
   }
+
+  .logo-title h1 {
+    font-size: 1.25rem;
+  }
+
   .htmls a {
     font-size: 0.9rem;
     padding: 6px 10px;
   }
-  body {
-    padding-top: 75px;
-  }
 }
 
 @media (max-width: 480px) {
-  html { scroll-padding-top: 60px; }
-  .top {
+  body {
+    padding-top: 80px;
+  }
+
+  html {
+    scroll-padding-top: 80px;
+  }
+
+  .nav-container {
     flex-direction: column;
     align-items: center;
-    padding: 12px 5px;
+    text-align: center;
   }
+
   .logo {
     height: 45px;
     width: 45px;
-    margin-bottom: 8px;
   }
+
+  .logo-title {
+    flex-direction: column;
+  }
+
   .htmls {
-    justify-content: center;
     gap: 10px;
+    margin-top: 10px;
   }
+
   .htmls a {
     font-size: 0.85rem;
     padding: 5px 8px;
-  }
-  body {
-    padding-top: 60px;
   }
 }
