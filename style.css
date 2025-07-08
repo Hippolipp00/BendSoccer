@@ -63,7 +63,7 @@ img {
 .logo {
   height: 90px;
   width: 90px;
-  object-postition: left top;
+  float: right;
 }
 
 /* Nav Links */
